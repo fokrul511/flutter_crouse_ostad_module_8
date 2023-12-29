@@ -13,6 +13,7 @@ class ChatsScreen extends StatelessWidget {
         itemCount: chatsList.length,
         itemBuilder: (context, index) {
           return ListTile(
+            onTap: (){},
             title: Text(chatsList[index]['Name']!),
             subtitle: Text(chatsList[index]['Title']!),
             trailing: Text(chatsList[index]['time']!,style: TextStyle(fontSize: 10),),

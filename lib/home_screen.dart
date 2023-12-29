@@ -49,8 +49,5 @@ flotingActionButton(Icon icon) {
   return FloatingActionButton(
     onPressed: () {},
     child: icon,
-    shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(20.0), // Adjust the radius as needed
-    ),
   );
 }

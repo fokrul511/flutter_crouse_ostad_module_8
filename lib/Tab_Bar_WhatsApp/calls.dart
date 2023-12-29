@@ -6,10 +6,13 @@ class CallsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-      floatingActionButton: flotingActionButton(Icon(Icons.add_call)),
-      body: Center(child: Text('Calls'),),
+    return Scaffold(
+      floatingActionButton: flotingActionButton(
+        Icon(Icons.add_call),
+      ),
+      body: Center(
+        child: Text('Calls'),
+      ),
     );
   }
 }
-

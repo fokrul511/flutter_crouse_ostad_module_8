@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_crouse_ostad_module_8/home_screen.dart';
 
 class GroupScreen extends StatelessWidget {
   const GroupScreen({super.key});
@@ -7,9 +6,29 @@ class GroupScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // floatingActionButton: flotingActionButton(Icon(Icons.camera_alt_rounded)),
-      body: Center(
-        child: Text('Group'),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Center(
+            child: ElevatedButton(
+              onPressed: () {},
+              child: Text('Start your community'),
+            ),
+          ),
+          Center(
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  minimumSize: Size(double.infinity, 44),
+                  backgroundColor: Colors.teal,
+                ),
+                onPressed: () {},
+                child: Text('Start your community'),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
