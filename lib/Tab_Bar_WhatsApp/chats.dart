@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_crouse_ostad_module_8/home_screen.dart';
 import 'package:flutter_crouse_ostad_module_8/list.dart';
 
 class ChatsScreen extends StatelessWidget {
@@ -8,7 +7,7 @@ class ChatsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: flotingActionButton(Icon(Icons.message_rounded)),
+      //floatingActionButton: flotingActionButton(Icon(Icons.message_rounded)),
       body: ListView.builder(
         itemCount: chatsList.length,
         itemBuilder: (context, index) {

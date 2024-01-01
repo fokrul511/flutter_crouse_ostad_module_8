@@ -1,14 +1,34 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_crouse_ostad_module_8/home_screen.dart';
 
-class UpdateScreen extends StatelessWidget {
+class UpdateScreen extends StatefulWidget {
   const UpdateScreen({super.key});
 
   @override
+  State<UpdateScreen> createState() => _UpdateScreenState();
+}
+
+class _UpdateScreenState extends State<UpdateScreen> {
+  int count = 0;
+  @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-      floatingActionButton: flotingActionButton(Icon(Icons.camera_alt)),
-      body: Center(child: Text('Update'),),
+    return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        child:const Icon(Icons.add),
+        onPressed: () {
+          count++;
+          setState(() {});
+        },
+      ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Center(
+            child: Text(
+              count.toString(),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

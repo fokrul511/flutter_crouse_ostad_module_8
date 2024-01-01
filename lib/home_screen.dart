@@ -45,9 +45,3 @@ class HomePage extends StatelessWidget {
   }
 }
 
-flotingActionButton(Icon icon) {
-  return FloatingActionButton(
-    onPressed: () {},
-    child: icon,
-  );
-}
