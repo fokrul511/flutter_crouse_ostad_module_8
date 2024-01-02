@@ -1,96 +1,19 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 var cardList = [
   {
-    'price': '10.5',
-    'ProductName': 'apple',
-    'image':
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyzQyiesjovetiwqwjWzss8ZX_baOSHBOiAgZsevkiBw&s'
+    'ProductName': 'Happy New Year 2024',
+    'image': 'https://images.unsplash.com/photo-1701170775318-47c8e50817da?q=80&w=1856&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   },{
-    'price': '10.5',
-    'ProductName': 'apple',
-    'image':
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyzQyiesjovetiwqwjWzss8ZX_baOSHBOiAgZsevkiBw&s'
+    'ProductName': 'Happy New Year 2024',
+    'image': 'https://images.unsplash.com/photo-1701170775318-47c8e50817da?q=80&w=1856&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   },{
-    'price': '10.5',
-    'ProductName': 'apple',
-    'image':
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyzQyiesjovetiwqwjWzss8ZX_baOSHBOiAgZsevkiBw&s'
+    'ProductName': 'Happy New Year 2024',
+    'image': 'https://images.unsplash.com/photo-1701170775318-47c8e50817da?q=80&w=1856&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   },{
-    'price': '10.5',
-    'ProductName': 'apple',
-    'image':
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyzQyiesjovetiwqwjWzss8ZX_baOSHBOiAgZsevkiBw&s'
-  },{
-    'price': '10.5',
-    'ProductName': 'apple',
-    'image':
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyzQyiesjovetiwqwjWzss8ZX_baOSHBOiAgZsevkiBw&s'
-  },{
-    'price': '10.5',
-    'ProductName': 'apple',
-    'image':
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyzQyiesjovetiwqwjWzss8ZX_baOSHBOiAgZsevkiBw&s'
-  },{
-    'price': '10.5',
-    'ProductName': 'apple',
-    'image':
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyzQyiesjovetiwqwjWzss8ZX_baOSHBOiAgZsevkiBw&s'
-  },{
-    'price': '10.5',
-    'ProductName': 'apple',
-    'image':
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyzQyiesjovetiwqwjWzss8ZX_baOSHBOiAgZsevkiBw&s'
-  },{
-    'price': '10.5',
-    'ProductName': 'apple',
-    'image':
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyzQyiesjovetiwqwjWzss8ZX_baOSHBOiAgZsevkiBw&s'
-  },{
-    'price': '10.5',
-    'ProductName': 'apple',
-    'image':
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyzQyiesjovetiwqwjWzss8ZX_baOSHBOiAgZsevkiBw&s'
-  },{
-    'price': '10.5',
-    'ProductName': 'apple',
-    'image':
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyzQyiesjovetiwqwjWzss8ZX_baOSHBOiAgZsevkiBw&s'
-  },{
-    'price': '10.5',
-    'ProductName': 'apple',
-    'image':
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyzQyiesjovetiwqwjWzss8ZX_baOSHBOiAgZsevkiBw&s'
-  },{
-    'price': '10.5',
-    'ProductName': 'apple',
-    'image':
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyzQyiesjovetiwqwjWzss8ZX_baOSHBOiAgZsevkiBw&s'
-  },{
-    'price': '10.5',
-    'ProductName': 'apple',
-    'image':
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyzQyiesjovetiwqwjWzss8ZX_baOSHBOiAgZsevkiBw&s'
-  },{
-    'price': '10.5',
-    'ProductName': 'apple',
-    'image':
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyzQyiesjovetiwqwjWzss8ZX_baOSHBOiAgZsevkiBw&s'
-  },{
-    'price': '10.5',
-    'ProductName': 'apple',
-    'image':
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyzQyiesjovetiwqwjWzss8ZX_baOSHBOiAgZsevkiBw&s'
-  },{
-    'price': '10.5',
-    'ProductName': 'apple',
-    'image':
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyzQyiesjovetiwqwjWzss8ZX_baOSHBOiAgZsevkiBw&s'
-  },{
-    'price': '10.5',
-    'ProductName': 'apple',
-    'image':
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyzQyiesjovetiwqwjWzss8ZX_baOSHBOiAgZsevkiBw&s'
+    'ProductName': 'Happy New Year 2024',
+    'image': 'https://images.unsplash.com/photo-1701170775318-47c8e50817da?q=80&w=1856&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   },
 ];
 
@@ -100,28 +23,29 @@ class CallsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Home Page'),
-      ),
       body: GridView.builder(
         itemCount: cardList.length,
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 3,
-          mainAxisSpacing: 2,
+          crossAxisCount: 2,
+          mainAxisSpacing: 1,
         ),
         itemBuilder: (context, index) {
           return Card(
             child: Column(
               children: [
-                // Image widget inside a SizedBox to provide a fixed size
+                // CachedNetworkImage widget
                 Expanded(
-                  child: Image.network(
-                    cardList[index]['image']!,
-                    fit: BoxFit.fill,
+                  child: CachedNetworkImage(
+                    imageUrl: cardList[index]['image']!,
+                    fit: BoxFit.cover,
+                    placeholder: (context, image) => SizedBox(height: 10, width: 10, child: CircularProgressIndicator(strokeCap: StrokeCap.round,)),
+                    errorWidget: (context, image, error) {
+                      print("Error loading image: $error");
+                      return Icon(Icons.error);
+                    },
                   ),
                 ),
                 Text(cardList[index]['ProductName']!),
-                Text(cardList[index]['price']!),
               ],
             ),
           );
